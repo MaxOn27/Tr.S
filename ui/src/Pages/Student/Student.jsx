@@ -1,6 +1,5 @@
 import React from 'react';
 import {AppShell, Group} from "@mantine/core";
-import CoachesNavigation from "../Coach/Navigation/CoachNavigation";
 import {Outlet} from "react-router-dom";
 import StudentNavigation from "./Navigation/StudentNavigation"
 

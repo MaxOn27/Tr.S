@@ -1,15 +1,15 @@
 import React from 'react';
-import {Box, NavLink, Title} from '@mantine/core';
+import { Box, NavLink, Title } from '@mantine/core';
 import { useLocation, useNavigate } from 'react-router-dom';
-import {useMediaQuery} from "@mantine/hooks";
+import { useMediaQuery } from '@mantine/hooks';
 
 
 export default function StudentNavigation() {
-	const navigate = useNavigate();
+		const navigate = useNavigate()
 	const location = useLocation();
 
 	const NavigationElement = ({ label, link, isBold = false, withIndentation = true }) => {
-		const isMobile = useMediaQuery('(max-width: 767px)');
+		         const isMobile = useMediaQuery('(max-width: 767px)')
 
 
 		const isLinkActive = location.pathname.startsWith(`/student/${link}`);
